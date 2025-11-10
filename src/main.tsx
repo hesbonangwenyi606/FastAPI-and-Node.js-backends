@@ -1,7 +1,12 @@
-from fastapi import FastAPI
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
+import './styles.css'
 
-app = FastAPI()
+const root = createRoot(document.getElementById('root')!)
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
 
-@app.get("/api/v1/items")
-async def get_items():
-    return [{"id": 1, "name": "Monitor"}, {"id": 2, "name": "Server"}]
