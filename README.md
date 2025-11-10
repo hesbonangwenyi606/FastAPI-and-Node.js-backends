@@ -1,4 +1,4 @@
-# React + TypeScript Frontend (Vite)
+# React + Python Frontend (Vite)
 
 This project is a minimal React + TypeScript frontend scaffold (Vite) that integrates with:
 
